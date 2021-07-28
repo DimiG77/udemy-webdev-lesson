@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Web Page</title>
+    <meta name="descripution" content="Page Description Here" />
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
+
+    <style type="text/css">
+        body {
+            background: linear-gradient(550deg, rgb(76, 162, 211) 95% , rgb(157, 228, 205) 18%, rgb(227, 236, 144) 90%);
+        }
+        h1 {
+            text-align: center;
+            padding: 0px 10px 0px 5px;
+            color:rgb(32, 34, 133);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            
+        }
+        p {
+            color: black;
+            padding-left: 4rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        input{
+            padding: 5px 5px 3px 1px;
+               
+        }
+        input::before{
+            border-style: groove;
+        }
+        input::after{
+            text-align: right;
+            border: groove;
+        }   
+    </style>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("fname");
+            x.value = x.value.toUpperCase();
+        }
+    </script>
+</head>
+<body>
+    <h1>This is a sample HTML document.</h1>
+    <p>This javascript function will capitalize the name.</p>
+    <p>Enter your name: <input type="text" id="fname" onchange="myFunction()"></p>
+</body>
+</html>
