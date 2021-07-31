@@ -7,18 +7,48 @@
 
     <style type="text/css">
         body {
-            background: linear-gradient(550deg, rgb(76, 162, 211) 95% , rgb(157, 228, 205) 18%, rgb(227, 236, 144) 90%);
+            
+            background: linear-gradient(171deg, rgba(32,212,191,1) 87%, rgba(48,241,151,1) 99%);
+
         }
         h1 {
             text-align: center;
-            padding: 0px 10px 0px 5px;
-            color:rgb(32, 34, 133);
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            
+            color:rgb(28, 248, 164);
+            font-family:Georgia, 'Times New Roman', Times, serif;  
+            padding: 2rem;
+            letter-spacing: 1.2rem;
         }
         p {
             color: black;
             padding-left: 4rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            background-color: linear-gradient(270deg, rgba(255,0,0,1) 0%, rgba(86,86,173,1) 100%, rgba(241,48,48,1) 100%);
+            color: #fff;
+            border-style: solid;
+            border-radius: 2.345rem;
+        }
+        ul{ display: flex;}
+        li{
+            
+            list-style: none;
+            margin: 1rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bolder;
+            font-size: 1.243rem;       
+        } 
+        a {
+            text-decoration: none;
+            color: #ffff
+        }
+        .logo{
+            font-size: 1.243rem;
+            font-weight: bolder ;
+            padding: 1rem;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
         input{
@@ -34,8 +64,25 @@
     </script>
 </head>
 <body>
-    <h1>This is a sample HTML document.</h1>
+    <h1>System Engineer DevOps</h1>
+    <nav>
+        <div class="logo">Tech DevOps</div>
+        <div class="menu"></div>
+            <ul>
+                <li><a href="a">Home</a></li>
+                <li><a href="a">Follow</a></li>
+                <li><a href="a">Contact</a></li>
+                <li><a href="a">Tutorials</a></li>
+
+
+            </ul>
+        </div>
+    </nav>
+    
     <p>This javascript function will capitalize the name.</p>
     <p>Enter your name: <input type="text" id="fname" onchange="myFunction()"></p>
+
+    <p>this is Line 1, <br> This is Line 2. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This is Line 3 </p>
+
 </body>
 </html>
