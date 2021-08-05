@@ -3,53 +3,71 @@
 <html>
 
 	<head>
-		<title>Table Tutorial</title>
+		<title>Form Tutorial</title>
 		<meta charset="utf-8">
 	</head>
-
-
 <body>
-
-
- <table width="600" border="1" cellspacing="2" cellpadding="2">
+<form action="send.php" name="employement" method="POST">
+ <table width="600" cellspacing="6" cellpadding="4">
     <tr>
-      <td></td>
-      <td></td>
+      <td colspan="2" align="center">Employment Application</td>
+    </tr>
+    <tr>
+      <td>First Name:</td>
+      <td><input type="text" name="fname" maxlength="50" placeholder="Your first name"></td>
+    </tr>
+    <tr>
+      <td>Last Name:</td>
+      <td><input type="text" name="fname" maxlength="50" placeholder="Your last name"></td>
+    </tr>
+    <tr>
+      <td>Position:</td>
+      <td> 
+        <select>
+          <option value="SofE">Software Engineer</option>
+          <option value="WB">Web Developer</option>
+          <option value="SysE">System Engineer</option>
+          <option value="IT">IT Intern</option>
+        </select>     
+      </td>
+    </tr>
+    <tr>
+      <td>Experience Level:</td>
+      <td>        
+        <select>
+          <option value="EL">Entry Level</option>
+          <option value="JU">Junior</option>
+          <option value="SE">Senior</option>
+          <option value="MA">Master</option>
+      </select></td>
+    </tr>
+    <tr>
+      <td>Job Type:</td>
+      <td><input type="checkbox">Full-Time 
+        <input type="checkbox">Half-Time 
+        <input type="checkbox">Remote
+        <input type="checkbox">Other</td>
+    </tr>
+    <tr>
+      <td>Employment Status:</td>
+      <td>
+        <input type="radio" name="estatus" value="employed">Employed 
+        <input type="radio" name="estatus" value="unemployed">Unemployed
+        <input type="radio" name="estatus" value="student">Student
+        <input type="radio" name="estatus" value="other">Other</td>
+      </td>
+    </tr>
+    <tr>
+      <td>Additional Comments:</td>
+      <td><textarea cols="55" rows="10"></textarea></td>
     </tr>
     <tr>
       <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
+       <td>
+         <input type="submit" name="submit" value="Submit">
+        <input type="reset" name="reset" value="Reset"></td>
     </tr>
   </table>
-
-
+</form>
 </body>
 </html>
