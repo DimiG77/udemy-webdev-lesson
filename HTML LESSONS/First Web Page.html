@@ -58,41 +58,13 @@
             padding: 5px 5px 3px 1px;
                
         }
-        ul{
-            display: flex;
-            padding: 1rem;
-            margin: 1rem;
+        input::before{
+            border-style: groove;
         }
-        li {
-            margin: 1rem;
-            align-items: center;
-            padding: 0.5rem;
-            text-decoration: lavenderblush;
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: inherit;
-            font-size: 1.2rem;
-            list-style: none;
-        }  
-        
-        /*========= div classes ========== */
-        .testing {
-            margin: 2px, 5px, 2px, 5px;
-            padding: 2px 5px 2px 5px;
-            display: flex;
-        }
-        .use {
-            margin: 2px, 5px, 2px, 5px;
-            padding: 2px 5px 2px 5px;
-            display: flex; 
-        }
-        .media {
-            margin: 2px, 5px, 2px, 5px;
-            padding: 2px 5px 2px 5px;
-            display: flex;
-        }
-        .header{
-            float: left;
-        }
+        input::after{
+            text-align: right;
+            border: groove;
+        }   
     </style>
     <script>
         function myFunction() {
